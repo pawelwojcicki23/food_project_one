@@ -1,3 +1,4 @@
+@import "bootstrap/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700,900&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext');
 @import "base";
@@ -113,7 +114,7 @@ h2 {
 
 .bg1 {
     background-color: rgb(250, 250, 252);
-    background-image: url("../images/header-bg.jpg/");
+    background-image: url("../images/header-bg.jpg");
     background-position: right;
 }
 .bg2 {
@@ -163,22 +164,22 @@ h2 {
 }
 
 .one {
-    background-image: url("../images/cart.png/");
+    background-image: url("../images/cart.png");
     @include block;
 }
 
 .two {
-    background-image: url("../images/quality.png/");
+    background-image: url("../images/quality.png");
     @include block;
 }
 
 .three {
-    background-image: url("../images/world.png/");
+    background-image: url("../images/world.png");
     @include block;
 }
 
 .four {
-    background-image: url("../images/carrot.png/");
+    background-image: url("../images/carrot.png");
     @include block;
 }
 
@@ -252,7 +253,7 @@ img {
 
 .bg5 {
     background-color: rgb(255, 255, 255);
-    background-image: url("../images/sub-bg.jpg/");
+    background-image: url("../images/sub-bg.jpg");
     background-position: right 25% bottom 45%;
 }
 
@@ -261,7 +262,7 @@ img {
 }
 
 .bg7 {
-    background-image: url("../images/contact-bg.jpg/");
+    background-image: url("../images/contact-bg.jpg");
     background-position: center;
     background-size: auto;
 }
