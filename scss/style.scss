@@ -13,16 +13,33 @@
     @include navigation;
 }
 
-.navbar {
-    z-index: 100;
-}
-
 .bg-light {
-    background-color: rgba(248,249,250, 0.5) !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 li:hover {
     border-top: 3px solid rgb(255, 96, 51);
+}
+
+nav {
+    transition-timing-function: linear;// przejscie z jednakowa predkoscia od poczatku do konca
+	transition-duration: 2000ms;	// czas trwania przejscia
+	transition-property: all;
+}
+
+nav.small a {// tutaj okreslamy jak maja wygladac linki w malym menu - po zjezdzie
+    height: 90px;
+    padding-top: 30px;
+}
+
+nav.small a.navbar-brand {
+    padding-top: 30px;
+}
+
+.navbar {
+    position: fixed;
+    min-width: 100%;
+    z-index: 100;
 }
 
 .navbar-collapse {
@@ -55,7 +72,7 @@ body {
     width: 500px;
     height: 400px;
     padding-left: 116px;
-    padding-top: 100px;
+    padding-top: 300px;
 }
 
 .home > h2 {
@@ -251,10 +268,39 @@ img {
     margin-top: 50px;
 }
 
+
 .bg5 {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/sub-bg.jpg");
     background-position: right 25% bottom 45%;
+}
+
+.text-bg5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 750px;
+    height: 400px;
+    padding-left: 116px;
+    padding-top: 250px;
+}
+
+.text-bg5 > h2 {
+    font-family: $font-raleway;
+    font-weight: bold;
+    color: rgb(38, 38, 38);
+    font-size: 40px;
+    margin-bottom: 32px;
+    padding-top: 64px;
+    text-align: center;
+}
+
+.text-bg5 > p {
+    font-family: $font-raleway;
+    font-weight: lighter;
+    color: rgb(38, 38, 38);
+    font-size: 17px;
+    margin-bottom: 48px;
 }
 
 .bg6 {
